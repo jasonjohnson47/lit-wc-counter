@@ -1,0 +1,10 @@
+::part(count-number) {
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+::part(btn-minus),
+::part(btn-plus) {
+  font-size: 20px;
+}

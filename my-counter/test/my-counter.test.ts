@@ -8,14 +8,14 @@ describe('MyCounter', () => {
     const el = await fixture<MyCounter>(html`<my-counter></my-counter>`);
 
     expect(el.title).to.equal('Hey there');
-    expect(el.counter).to.equal(5);
+    expect(el.count).to.equal(5);
   });
 
   it('increases the counter on button click', async () => {
     const el = await fixture<MyCounter>(html`<my-counter></my-counter>`);
     el.shadowRoot!.querySelector('button')!.click();
 
-    expect(el.counter).to.equal(6);
+    expect(el.count).to.equal(6);
   });
 
   it('can override the title via attribute', async () => {
